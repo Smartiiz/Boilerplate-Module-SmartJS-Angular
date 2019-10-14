@@ -1,0 +1,19 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "outDir": "./out-tsc/app",
+        "types": [
+            "node"
+        ],
+        "plugins": [
+            { "transform": "ts-transformer-keys/transformer" }
+        ]
+    },
+    "include": [
+        "source/src/**/*.ts"
+    ],
+    "exclude": [
+        "source/src/test.ts",
+        "source/src/**/*.spec.ts"
+    ]
+}
